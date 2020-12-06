@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe-galery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img, .column video {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="./asset/img/img_galery1.webp" style="width:100%">
+            <img src="./asset/img/img_galery5.webp" style="width:100%">
+            <img src="./asset/img/img_galery12.webp" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./asset/img/img_galery2.webp" style="width:100%">
+            <img src="./asset/img/img_galery6.webp" style="width:100%">
+            <video autoplay loop muted playsinline style="width: 100%;">
+                <source src="./asset/vid/vid_galery9.webm" type="video/webm">
+            </video>
+            <img src="./asset/img/img_galery13.webp" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./asset/img/img_galery3.webp" style="width:100%">
+            <img src="./asset/img/img_galery7.webp" style="width:100%">
+            <img src="./asset/img/img_galery10.webp" style="width: 100%;">
+            <img src="./asset/img/img_galery14.webp" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="./asset/img/img_galery4.webp" style="width:100%">
+            <img src="./asset/img/img_galery8.webp" style="width:100%">
+            <img src="./asset/img/img_galery11.webp" style="width:100%">
+        </div> 
+    </div>
+</body>
+
+</html>
